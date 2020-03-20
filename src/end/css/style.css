@@ -1,5 +1,442 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: white;
+  background-color: #5169c9;
+  /* overflow: hidden; */
+}
+
+@font-face {
+  font-family: pectia;
+  src: url(/src/end/Pecita.otf);
+}
+
+/* ==============Utility classes============== */
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  height: 100vh;
+  position: relative;
+}
+.container2 {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.primarycolor {
+  color: #00ffe2;
+}
+
+.primarycolor2 {
+  color: #d47777;
+}
+
+.navBTN {
+  color: white;
+}
+.logo {
+  font-family: pectia;
+  font-size: 4rem;
+  font-weight: 900;
+  margin-left: -2px;
+  padding-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  color: #d47777;
+  background: #00ffe2;
+  padding: 1.1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  border: none;
+}
+
+/* ==============Home page=====
+===========
+===========
+===========
+========= */
+
+/* ==============style for navigation============== */
+#navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: 2.5rem; */
+}
+
+#navbar h1 {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin-top: 2.5rem;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+#navbar ul li {
+  margin: 0 1rem;
+}
+#navbar ul li a {
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+/* ==============Sect 1============== */
+
+#sect1 {
+  font-size: 1.2rem;
+  line-height: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 900;
+  margin-top: 80px;
+}
+
+/* ==============Sect 2============== */
+.showcase {
+  display: flex;
+  justify-content: space-between;
+}
+
+#innerShowcase {
+  width: 880px;
+  line-height: 9rem;
+  letter-spacing: 0.2rem;
+  font-size: 3rem;
+  text-align: left;
+  margin-top: 30px;
+  font-family: pectia;
+  font-style: normal;
+}
+
+.innerShowcase2 {
+  background: #00ffe2;
+  margin-top: 15px;
+  width: 200px;
+  border-radius: 20px;
+  height: 250px;
+}
+
+.innerShowcase2 h1 {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
+  transform: rotate(-90deg);
+  margin-top: 72px;
+}
+.innerShowcase2 h1 .logo {
+  font-size: 6rem;
+  margin-top: 8px;
+  margin-left: -5px;
+}
+
+#rect {
+  width: 500px;
+  height: 20px;
+  background-color: #bc8f8f;
+  margin-top: 10px;
+}
+
+#square {
+  position: absolute;
+  display: block;
+  background: #00ffe2;
+  margin-top: 15px;
+  width: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 250px;
+  bottom: 0;
+  margin-right: 0;
+  margin-left: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding-top: 80px;
+}
+#square img {
+  width: 60px;
+}
+#rect {
+  position: absolute;
+  display: block;
+  width: 880px;
+  height: 20px;
+  background: white;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  opacity: 0.2;
+  bottom: 0;
+  margin-left: 0;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+#rect2 {
+  position: absolute;
+  display: block;
+  width: 880px;
+  height: 30px;
+  background: white;
+  border-radius: 30px;
+  opacity: 0.2;
+  bottom: 0;
+  margin-left: 0;
+  margin-right: auto;
+  margin-bottom: 30px;
+  left: 0;
+  right: 0;
+}
+
+/* ==============contact page=====
+===========
+===========
+===========
+========= */
+
+#rect2-co {
+  position: absolute;
+  display: block;
+  width: 300px;
+  height: 30px;
+  background: white;
+  border-radius: 30px;
+  opacity: 0.2;
+  bottom: 0;
+  margin-left: 100px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  left: 0;
+  right: 0;
+}
+
+#rect-co {
+  position: absolute;
+  display: block;
+  width: 300px;
+  height: 20px;
+  background: white;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  opacity: 0.2;
+  bottom: 0;
+  margin-left: 100px;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.innerShowcase2-con {
+  background: #00ffe2;
+  margin-top: 50px;
+  width: 150px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 430px;
+}
+
+.innerShowcase2-con h1 {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
+  transform: rotate(-90deg);
+  margin-top: 190px;
+}
+.innerShowcase2-con h1 .logo {
+  font-size: 6rem;
+  margin-top: 8px;
+  margin-left: -5px;
+}
+
+.showcase2 {
+  display: flex;
+  height: 400px;
+  justify-content: space-between;
+}
+
+.form-group {
+  margin-top: 50px;
+  background: #00ffe2;
+  width: 300px;
+  padding: 1rem 1.2rem;
+  margin-left: 100px;
+  border-radius: 20px;
+  height: 430px;
+}
+
+.form-field {
+  margin-top: 1rem;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.input-outline:focus {
+  outline: none;
+  color: black;
+}
+
+.input-outline::placeholder {
+  color: #d47777;
+}
+
+.message textarea {
+  color: #d47777;
+  width: 100%;
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 1rem 1.2rem;
+  resize: none;
+}
+
+#contact {
+  margin: 1rem;
+  text-align: center;
+}
+
+#btn-contact {
+  background: #d47777;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 1rem 1rem;
+}
+
+#btn-contact:focus {
+  outline: none;
+}
+#btn-contact:hover {
+  cursor: pointer;
+  color: black;
+}
+
+/* ==============about page=====
+===========
+===========
+===========
+========= */
+
+.innerShowcase2-abt {
+  background: #00ffe2;
+  margin-top: 50px;
+  width: 150px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 430px;
+}
+
+.innerShowcase2-abt h1 {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
+  transform: rotate(90deg);
+  margin-top: 130px;
+}
+.innerShowcase2-abt h1 .logo {
+  font-size: 6rem;
+  margin-top: 8px;
+  margin-left: -5px;
+}
+
+#rect2-abt {
+  position: absolute;
+  display: block;
+  width: 950px;
+  height: 30px;
+  background: white;
+  border-radius: 30px;
+  opacity: 0.2;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  left: 0;
+  right: 0;
+}
+
+#rect-abt {
+  position: absolute;
+  display: block;
+  width: 950px;
+  height: 20px;
+  background: white;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  opacity: 0.2;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+#sect2 {
+  font-size: 1.2rem;
+  line-height: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 900;
+}
+
+#story {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#story h2 {
+  width: 950px;
+  line-height: 2.5rem;
+  letter-spacing: 0.2rem;
+  font-size: 1.8rem;
+  margin-top: 30px;
+  color: #00ffe2;
+  font-family: pectia;
+  font-style: normal;
+}
+#story h3 {
+  width: 950px;
+  line-height: 2.5rem;
+  letter-spacing: 0.2rem;
+  font-size: 1.5rem;
+  font-family: pectia;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+#btn-abt {
+  margin-top: 30px;
 }
